@@ -332,6 +332,15 @@
     .goals-container{
         margin-top:115px;
     }
+    /*footer*/
+    .footer-img {
+        padding-top: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+    .footer-text{
+        padding: 0 42px;
+    }
     /*shape*/
     .shape__square-empty{
         width: 124px;
