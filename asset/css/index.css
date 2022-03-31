@@ -25,7 +25,6 @@ header{
     padding: 76px 106px 0 106px;
     display:flex;
     justify-content: space-between;
-    
 }
 .mobile-nav{
     display: none;
@@ -36,13 +35,7 @@ header{
 }
 .header-nav{
     white-space:nowrap;
-    
 }
-/* .header-nav{
-    position:absolute;
-    top: 76px;
-    right: 106px;
-} */
 .header-slogan__sm{
     margin: 0;
     text-align: center;
@@ -83,18 +76,20 @@ header{
 }
 
 
-/* biểu tượng */
 
-.shape__square-empty {
+/* biểu tượng */
+.shape-square__header{
+    position: absolute;
     width: 227px;
     height: 227px;
+    
+}
+.shape__square-empty {
     border: 41px solid var(--color-icon-shape-header);
-    position: absolute;
     left: 508.64px;
     top: 195.31px;
 }
 .shape__square-full {
-    position: absolute;
     width: 108px;
     height: 108px;
     background: var(--color-icon-shape-header);
@@ -142,6 +137,86 @@ header{
     top: 37%;
     left: -99px;
 }
+.shape-wrap{
+    position: absolute;
+    top:56px;
+    right:27%;
+    z-index: -1;
+}
+.shape-sofware{
+    position: absolute;
+    top: -14px;
+    left: 38%;
+    z-index: -1;
+}
+
+.shape{
+    width:44px;
+    height: 44px;
+    background: rgba(231, 228, 228, 0.7);
+    transform: rotate(-90deg);
+    position: absolute;
+}
+.shape-square1{
+    border-radius: 5px 5px 0px 0px;
+    top:0;
+    right:30%;
+
+}
+.shape-square2{
+    border-radius: 5px;
+    top: 40px;
+    right: calc(30% + 40px);
+}
+.shape-square{
+    width: 175px;
+    height:175px;
+    
+}
+.shape-square-sm{
+    width:22px;
+    height: 22px;
+    border-radius: 5px;
+    top: 83px;
+    right:30%;
+    border-color: #CCDFEF;
+}
+.shape__square-app{
+    top: 354px;
+    left: -92px;
+    border-color: #CCDFEF;
+    z-index: -1;
+}
+.shape__square-sofware{
+    right: -91px;
+    bottom: -120px;
+    border-color: #CCDFEF;
+}
+.shape-footer{
+    position: absolute;
+    bottom: 122px;
+    z-index: 1000;
+    left: 27%;
+   
+}
+.shape-footer--square{
+    background: rgba(242, 236, 236, 0.2);
+}
+.shape-img{
+    position: absolute;
+    transform: rotate(90deg);
+    z-index: 9999;
+    bottom: 0px;
+    right: 22%;
+}
+.shape-img--square{
+    background-color: #FFFFFF;
+}
+.shape-img--square-blue{
+    background-color: var(--color-primary);
+}
+
+
 
 .slogan-wrap{
     display: flex;
@@ -302,6 +377,7 @@ header{
 /* footer */
 
 footer{
+    position: relative;
     width:100%;
     background-image: url('../image/bg-footer.svg');
     background-repeat: no-repeat;
@@ -815,6 +891,7 @@ footer{
 
 .application-container{
     padding:105px 103px;
+    position:relative;
 }
 .application.row{
     align-items: center;
@@ -873,8 +950,6 @@ footer{
     width:781px;
     background-color: var(--color-primary);
     transform: rotate(54.95deg);
-    /* top: 247px;
-    right: -144px; */
     top: 50.64%;
     left: -32%;
     z-index: -1;
@@ -906,6 +981,7 @@ footer{
     border: 4px solid #0163B3;
     box-shadow: 0px 4px 60px -5px #0061B0;
 }
+
 
 
 /*LIÊN HỆ*/
@@ -959,8 +1035,7 @@ footer{
     line-height:29px;
 }
 .sofware-container{
-    /* max-width: 1440px;
-    margin: 0 auto; */
+   position: relative;
     padding:0 103px;
 }
 .sofware-heading__name{
